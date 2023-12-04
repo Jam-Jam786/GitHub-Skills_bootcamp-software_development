@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Counter_Styles.CSS">
+    
+    <title>counter-style</title>
+</head>
+<body>
+    <div id="counter" class="counter_style" onclick="buttonClicked()">
+        <b>click me!</b>
+    </div>
+<script>
+    // console.log("hello world")
+    // let myNum = 10
+    // console.log(myNum * 5)
+
+    // let firstName = "jamal"
+    // let lastName = "hussain"
+    // console.log(`${firstName} ${lastName}`)
+
+
+    // DOM = document object model
+
+    let count = 0
+    function buttonClicked(){
+        // console.log
+        let counterBtn = document.getElementById("counter")
+               if (count > 21)
+        count = 0
+        count ++
+        counterBtn.innerHTML = count
+        let counterBtn.style.backgroundColor = ""
+        
+        if (count % 3 ){
+            counterBtn.innerHTML = ("FIZZ")
+            counterBtn.style.backgroundColor = "blue"    
+        }
+        
+
+        if (count % 5 ){
+            counterBtn.innerHTML = ("BUZZ")
+            counterBtn.style.backgroundColor = "pink"    
+        }
+
+
+        if (count % 7 ){
+        counterBtn.innerHTML = ("POP")
+        counterBtn.style.backgroundColor= "yellow"
+        }
+
+    }
+
+    
+    // console.log(counterBtn.innerHTML)
+    // counterBtn.innerHTML = "this text was edied in JavaScript!"
+
+</script>
+</body>
+</html>

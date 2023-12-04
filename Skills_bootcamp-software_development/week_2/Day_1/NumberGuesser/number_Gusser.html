@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Guess_Styles.css">
+    <title>Number_Guessing_Game! </title>
+</head>
+<body>
+    <h2 id="feedback">test</h2>
+    <input id="guess-text" type="text" />
+    <button onclick="makeGuess()">Guess</button>
+    <script>
+        let test = ""
+        const answer = 5
+        const numAttempts = 3
+        function makeGuess(){
+            let guess = parseInt(document.getElementById("guess-text").value)
+            let feedback = document.getElementById("feedback")
+            // alert(guess)
+            let test =""
+
+            // numAttempts --
+            // alert(`attempts : ${numAttempts}`)
+
+            if (guess < answer){
+            feedback.innerHTML = "TOO LOW"
+            alert("TOO LOW")
+
+            }else if (guess > answer){
+            feedback.innerHTML = "TOO HIGH"
+            alert("TOO HIGH")
+
+            }else{
+            feedback.innerHTML = "CORRECT"
+            alert("CORRECT")
+            }
+           
+
+            // feedback.innerHTML = test
+            // consol.log("test")
+
+         }
+
+    </script>
+</body>
+</html>
